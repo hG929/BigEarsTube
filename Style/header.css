@@ -1,0 +1,231 @@
+.headbar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 9.5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-color: #606060;
+  height: 66px;
+  background-color: white;
+  z-index: 10;
+}
+
+.headbar-hover-text{
+  position: absolute;
+  white-space: nowrap;
+  bottom: -30px;
+  background-color: #616161;
+  color: white;
+  font-size: 13px;
+  padding: 4px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+}
+
+.voice-search-button:hover .headbar-hover-text,
+.search-button:hover .headbar-hover-text,
+.account-button:hover .headbar-hover-text,
+.notification-count:hover .headbar-hover-text,
+.youtube-logo-div:hover .headbar-hover-text{
+  opacity: 1;
+}
+
+/* 1. style settings for the youtube logo section*/
+
+/* 1.1 overall section style settings*/
+
+.youtube-logo-section{
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* 1.2 style settings for specific parts*/
+
+.hamburger{
+  height: 24px;
+  margin: 0 23px 0;
+}
+
+.youtubelogo{
+  margin-top: 5px;
+  height: 30px;
+}
+
+.youtube-logo-div{
+  position: relative;
+}
+
+.youtube-logo-div:hover{
+  cursor: pointer;
+}
+
+.youtube-logo-div .headbar-hover-text{
+  position: absolute;
+  white-space: nowrap;
+  bottom: -26px;
+  right: 10px;
+  background-color: #616161;
+  color: white;
+  font-size: 16px;
+  padding: 6px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+}
+
+/* 2. style settings for the search bar*/
+
+/* 2.1 overall section style settings*/
+
+.search-bar{
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 70px;
+  max-width: 650px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-shrink: 0;
+}
+
+/* 2.2 style settings for specific parts*/
+
+.search-input{
+  padding-left: 16px;
+  border-radius: 100px 0 0 100px;
+  margin-right: 0;
+  border: solid 1px #6060607e;
+  height: 36px;
+  flex:1;
+  font-size: 18px;
+  box-shadow: inset 1px 2px 5px rgba(0,0,0,0.05);
+  width:0;
+}
+
+.search-input::placeholder{
+  font-size: 20px;
+  
+}
+
+.search-button{
+  position: relative;
+  display: flex;
+  height:40px;
+  width: 60px;
+  border-radius: 0 100px 100px 0;
+  border: 1px solid #6060607e;
+  justify-content: center;
+  align-items: center;
+  border-left: none;
+  background-color: #60606010;
+}
+
+.search-button:hover{
+  cursor: pointer;
+}
+
+.search-button-svg{
+  height: 25px;
+  margin-right: 2.2px;
+}
+
+.voice-search-button{
+  height:40px;
+  width: 40px;
+  margin-left: 12px;
+  border-radius: 100px;
+  border-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #60606010;
+  position: relative;
+  cursor: pointer;
+}
+
+.voice-search-button-svg{
+  height: 26px;
+}
+
+
+/* 3. style settings for the current acount options section*/
+
+/* 3.1 overall section style settings*/
+
+.account-section{
+  margin-top: 3px;
+  width: 170px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.upload-button, .notification-icon, .account-button{
+  border-style: none;
+  background-color: white;
+}
+
+.upload-button:hover, .notification-icon:hover, .account-button:hover{
+  cursor: pointer;
+}
+
+/* 3.2 style settings for specific parts*/
+
+.upload-button-svg{
+  height:24px;
+  width: 24px;
+}
+
+.notification-icon-div{
+  position: relative;
+}
+
+.notification-count{
+  position: absolute;
+  top:-3px;
+  right:-9px;
+  font-size: 11px;
+  background-color: rgba(225,0,0,0.86);
+  color: white;
+  border-radius: 1000px;
+  padding: 2px 3px;
+}
+
+.notification-number:hover{
+  cursor:not-allowed;
+}
+
+.notification-icon-svg{
+  height:24px;
+  width: 24px;
+}
+
+.account-icon-png{
+  height:40px;
+  width: 40px;
+  border-radius: 50px;
+}
+
+.account-button .headbar-hover-text{
+  position: absolute;
+  white-space: nowrap;
+  bottom: -20px;
+  right: 0;
+  background-color: #616161;
+  color: white;
+  font-size: 16px;
+  padding: 6px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.5s;
+  pointer-events: none;
+}
